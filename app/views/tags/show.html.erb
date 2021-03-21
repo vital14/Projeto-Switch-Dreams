@@ -1,0 +1,23 @@
+<%= stylesheet_link_tag 'show.css' %>
+<div class="Show-Content">
+  <p id="notice"><%= notice %></p>
+  <div class="mostraDados">
+    <p>
+      <strong>Nome:</strong>
+      <%= @tag.name %>
+    </p>
+
+    <p>
+      <strong>Categoria:</strong>
+      <%= @tag.categoria %>
+    </p>
+
+      <%= link_to 'Back', root_path %>
+    </button>
+    <button style="margin-top:10px">
+      <% if current_user && current_user.admin %>
+        <%= link_to 'Destroy', @tag, method: :delete, data: { confirm: 'Are you sure?' } %>
+      <% end %>
+    </button>
+  </div>
+</div>

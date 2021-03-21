@@ -1,0 +1,43 @@
+.Left-tab {
+    padding-top: 50px;
+    display: flex;
+    width: 100px;
+    height: 100vh;
+    background-color: #f3f3f3;
+}
+
+.books-content {
+    display: flex;
+
+
+}
+.book-box{
+    display: flex;
+    width: 100%;
+    padding-top: 50px;
+}
+.Card-Book{
+    display: flex;
+    width: 200px;
+    margin-right: 20px;
+    margin-left: 20px;
+    height: 200px;
+    margin-top:20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.image{
+    width: 200px;
+    height: 200px;
+}
+body {
+    margin: 0;
+}
+.books-titulo{
+    font-size: 25px;
+    
+}
+.coluna-botoes{
+    flex-direction: column;
+}

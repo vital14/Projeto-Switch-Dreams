@@ -1,0 +1,64 @@
+.content-register{
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card-sign-up{
+    width: 50%;
+    height: 500px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 18%, rgba(4,112,189,1) 36%, rgba(1,196,245,1) 95%, rgba(0,212,255,1) 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.content-register .form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.content-register .actions-submit{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 15px;
+
+}
+.content-register .actions-submit input {
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.content-register .actions-submit input:hover {
+    background-color: #c1c1c1;
+    color: #fff
+
+}
+.content-register .field input {
+    border-radius: 20px;
+    border: none;
+}
+.content-register .field-password{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+.content-register .field-password input {
+    border-radius: 20px;
+    border: none;
+}
+.content-register .alert{
+    color: red;
+}

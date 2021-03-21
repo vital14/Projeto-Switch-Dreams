@@ -1,0 +1,29 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  # For details on connection pooling, see Rails configuration guide
+  # https://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: Biblioteca_development
+  username: postgres
+  password: 123456
+  host: localhost
+
+
+test:
+  <<: *default
+  database: Biblioteca_test
+  username: postgres
+  password: 123456
+  host: localhost
+
+
+production:
+  <<: *default
+  database: Biblioteca_production
+  username: Biblioteca
+  password: <%= ENV['BIBLIOTECA_DATABASE_PASSWORD'] %>

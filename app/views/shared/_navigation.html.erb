@@ -1,0 +1,22 @@
+<%= stylesheet_link_tag 'navigation' %>
+
+<ul>
+  <li style="float:right;margin-top: 10px" }><%= form_tag(books_path, method: :get) do %>
+      <%= text_field_tag 'search', nil, placeholder: 'Digite o termo a ser procurado' %>
+      <%= submit_tag "Buscar" %>
+    <% end %>
+  <%if current_user%>
+ <li><%= link_to 'Home', root_path %></li>
+  <li><%= link_to 'Log-out', destroy_user_session_path, method: :delete %></li>
+  <li style="margin-left: 600px;font-size: 40px">Biblioteca BnU</li>
+  <% else %>
+    <li><%= link_to 'Home', root_path %></li>
+    <li><%= link_to 'Sign-Up', new_user_registration_path %></li>
+  <li><%= link_to 'Log-In', new_user_session_path %></li>
+  <li style="margin-left: 550px;font-size: 40px">Biblioteca BnU</li>
+  <%end%>
+
+
+
+</ul>
+

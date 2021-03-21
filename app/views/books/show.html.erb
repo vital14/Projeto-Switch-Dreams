@@ -1,0 +1,32 @@
+<%= stylesheet_link_tag 'show.css' %>
+<div class="Show-Content">
+  <p id="notice"><%= notice %></p>
+  <div class="mostraDados">
+    <p>
+      <strong>Titulo:</strong>
+      <%= @book.titulo %>
+    </p>
+
+    <p>
+      <strong>Ano:</strong>
+      <%= @book.ano %>
+    </p>
+
+    <p>
+      <strong>Autor:</strong>
+      <%= @book.autor %>
+    </p>
+    <p>
+      <strong>conteudo:</strong>
+      <%= link_to 'View file', @book.file %>
+    </p>
+    <button>
+      <%= link_to 'Back', root_path %>
+    </button>
+    <button style="margin-top:10px">
+      <% if current_user && current_user.admin %>
+        <%= link_to 'Destroy', @book, method: :delete, data: { confirm: 'Are you sure?' } %>
+      <% end %>
+    </button>
+  </div>
+</div>

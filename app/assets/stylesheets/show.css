@@ -1,0 +1,23 @@
+.Show-Content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mostraDados {
+    width: 50%;
+    height: 500px;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(9, 9, 119) 18%, rgb(4, 112, 189) 36%, rgba(1, 196, 245, 1) 95%, rgba(0, 212, 255, 1) 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
